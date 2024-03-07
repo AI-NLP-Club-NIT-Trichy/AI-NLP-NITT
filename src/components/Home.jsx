@@ -1,5 +1,11 @@
-const Home = () => {
-  return <div>Home</div>;
-};
+import GlyphButton from './glyph_button/GlyphButton'
 
-export default Home;
+const Home = () => {
+  return (
+    <div className="w-full text-center text-5xl">
+      <GlyphButton text={'AI & NLP'} speed={0.3} />
+    </div>
+  )
+}
+
+export default Home

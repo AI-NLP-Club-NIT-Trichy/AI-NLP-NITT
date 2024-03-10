@@ -5,6 +5,7 @@ import About from "./components/About";
 import Teams from "./components/Teams";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/events" element={<Events />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );

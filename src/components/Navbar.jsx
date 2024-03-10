@@ -8,7 +8,7 @@ const Navbar = () => {
       <Link to={"/"}>HOME</Link>
       {links.map((link) => {
         // console.log(link);
-        return <Link to={`/${link}`}>{link.toUpperCase()}</Link>;
+        return <Link key={link} to={`/${link}`}>{link.toUpperCase()}</Link>;
       })}
     </nav>
   );

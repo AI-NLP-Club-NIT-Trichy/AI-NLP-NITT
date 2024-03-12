@@ -72,6 +72,7 @@ const Gallery = () => {
 };
 
 //Tag OR Filters
+// eslint-disable-next-line react/prop-types
 const Tag = ({ filter, filterImages,activeFilter,setActiveFilter }) => {
   return (
     <div

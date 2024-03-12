@@ -32,7 +32,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full flex px-8 items-center py-6 bg-black ">
+    <nav className="w-full top-0 sticky flex px-8 items-center py-6 bg-black ">
       <div className="w-[min(1100px,100%)] mx-auto flex flex-row justify-between items-center gap-8">
         <section className="flex items-center gap-4">
           {/* Logo*/}
@@ -68,7 +68,7 @@ export default function Navbar() {
       <div
         className={clsx(
           "fixed top-0 right-0 h-full w-screen lg:hidden bg-black/50  backdrop-blur-sm  translate-x-full  transition-all ",
-          isSideMenuOpen && "translate-x-0"
+          isSideMenuOpen && "-translate-x-0"
         )}
       >
         <section className="text-white bg-black flex-col absolute right-0 top-0 h-screen p-8 gap-8 z-50 w-56 flex  ">

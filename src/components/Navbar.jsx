@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
-import clsx from "clsx";
+import clsx from "classnames";
 
 export default function Navbar() {
   const [isSideMenuOpen, setMenu] = useState(false);
@@ -67,14 +67,14 @@ export default function Navbar() {
       {/* sidebar mobile menu */}
       <div
         className={clsx(
-          "fixed top-0 right-0 h-full w-screen lg:hidden bg-black/50  backdrop-blur-sm  translate-x-full  transition-all ",
-          isSideMenuOpen && "-translate-x-0"
+          "lg:hidden fixed top-0 left-0 h-full w-screen backdrop-blur-sm bg-black/50",
+          isSideMenuOpen ? "  " : "hidden"
         )}
       >
-        <section className="text-white bg-black flex-col absolute right-0 top-0 h-screen p-8 gap-8 z-50 w-56 flex  ">
+        <section className="absolute flex flex-col top-0 right-0 w-56 text-white bg-black h-screen p-8 gap-8 z-50 ">
           <IoCloseOutline
             onClick={() => setMenu(false)}
-            className="mt-0 mb-8 text-3xl cursor-pointer"
+            className="mt-0 self-end  mb-8 text-3xl cursor-pointer"
           />
 
           {navlinks.map((links, index) => (

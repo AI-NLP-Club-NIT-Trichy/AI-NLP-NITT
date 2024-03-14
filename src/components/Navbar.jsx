@@ -32,18 +32,20 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full top-0 sticky flex px-8 items-center py-6 bg-black ">
+    <nav className="w-full top-0 sticky flex px-8 items-center py-4 bg-black ">
       <div className="w-[min(1100px,100%)] mx-auto flex flex-row justify-between items-center gap-8">
+      
         <section className="flex items-center gap-4">
           {/* Logo*/}
           <Link to="/" className="text-4xl font-mono">
             <img
-              className="h-[3rem] mx-4  rounded-[100%] "
+              className=" h-[2.2rem] sm:h-[3rem] mx-4  rounded-[100%] "
               src="images/club-logo.jpg"
             />
           </Link>
-          <h2 className="text-3xl text-white">AI & NLP</h2>
+          <h2 className="text:2xl sm:text-3xl text-white">AI & NLP</h2>
         </section>
+
         <div className="hidden lg:block ">
           {navlinks.map((links, index) => (
             <NavLink

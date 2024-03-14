@@ -30,7 +30,6 @@ export default function Navbar() {
       link: "/gallery",
     },
   ];
-
   return (
     <nav className="w-full top-0 sticky flex px-8 items-center py-4 bg-black ">
       <div className="w-[min(1100px,100%)] mx-auto flex flex-row justify-between items-center gap-8">

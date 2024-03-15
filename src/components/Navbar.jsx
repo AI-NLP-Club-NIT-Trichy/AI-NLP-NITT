@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
-import clsx from "clsx";
+import clsx from "classnames";
 
 export default function Navbar() {
   const [isSideMenuOpen, setMenu] = useState(false);
@@ -30,20 +30,21 @@ export default function Navbar() {
       link: "/gallery",
     },
   ];
-
   return (
-    <nav className="w-full top-0 sticky flex px-8 items-center py-6 bg-black ">
+    <nav className="w-full top-0 sticky flex px-8 items-center py-4 bg-black z-10">
       <div className="w-[min(1100px,100%)] mx-auto flex flex-row justify-between items-center gap-8">
+      
         <section className="flex items-center gap-4">
           {/* Logo*/}
           <Link to="/" className="text-4xl font-mono">
             <img
-              className="h-[3rem] mx-4  rounded-[100%] "
+              className=" h-[2.2rem] sm:h-[3rem] mx-4  rounded-[100%] "
               src="images/club-logo.jpg"
             />
           </Link>
-          <h2 className="text-3xl text-white">AI & NLP</h2>
+          <h2 className="text:2xl sm:text-3xl text-white">AI & NLP</h2>
         </section>
+
         <div className="hidden lg:block ">
           {navlinks.map((links, index) => (
             <NavLink
@@ -67,14 +68,14 @@ export default function Navbar() {
       {/* sidebar mobile menu */}
       <div
         className={clsx(
-          "fixed top-0 right-0 h-full w-screen lg:hidden bg-black/50  backdrop-blur-sm  translate-x-full  transition-all ",
-          isSideMenuOpen && "-translate-x-0"
+          "lg:hidden fixed top-0 left-0 h-full w-screen backdrop-blur-sm bg-black/50",
+          isSideMenuOpen ? "  " : "hidden"
         )}
       >
-        <section className="text-white bg-black flex-col absolute right-0 top-0 h-screen p-8 gap-8 z-50 w-56 flex  ">
+        <section className="absolute flex flex-col top-0 right-0 w-56 text-white bg-black h-screen p-8 gap-8 z-50 ">
           <IoCloseOutline
             onClick={() => setMenu(false)}
-            className="mt-0 mb-8 text-3xl cursor-pointer"
+            className="mt-0 self-end  mb-8 text-3xl cursor-pointer"
           />
 
           {navlinks.map((links, index) => (

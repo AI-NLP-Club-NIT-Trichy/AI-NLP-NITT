@@ -4,15 +4,16 @@ import "yet-another-react-lightbox/styles.css";
 import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/plugins/counter.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import ModernButton from "./modernButton/ModernButton";
 
 import imageList from "../../public/images_data.js";
 
 const Gallery = () => {
   const [filteredImageList, setFilteredImageList] = useState(imageList);
-  const [filters, setFilters] = useState([]);  
+  const [filters, setFilters] = useState([]);
   const [open, setOpen] = React.useState(false); //To open lightbox
-  const [startIndex,setStartIndex] =useState(0); //needed to start the lightbox with clicked image
-  const [activeFilter,setActiveFilter]=useState("All");
+  const [startIndex, setStartIndex] = useState(0); //needed to start the lightbox with clicked image
+  const [activeFilter, setActiveFilter] = useState("All");
 
   useEffect(() => {
     const tags = [];
@@ -32,19 +33,27 @@ const Gallery = () => {
 
   return (
     <div className="w-[min(1100px,100%)] m-auto">
-      
       {/* Filters List  */}
-      <div className=" m-8 flex flex-row gap-y-3 gap-x-4 justify-center flex-wrap">
+      <div className=" m-8 flex flex-row gap-y-3 gap-x-6 justify-center flex-wrap">
         {filters.map((filter, index) => (
-          <Tag key={index} filter={filter} filterImages={filterImages} activeFilter={activeFilter} setActiveFilter={setActiveFilter}/>
+          <ModernButton
+            key={index}
+            filter={filter}
+            filterImages={filterImages}
+            activeFilter={activeFilter}
+            setActiveFilter={setActiveFilter}
+          />
         ))}
       </div>
-      
+
       {/* Image Gallery */}
-      <div className="m-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="m-8 grid grid-cols-2 md:grid-cols-3 gap-6 ">
         {filteredImageList.map((item, index) => {
           return (
-            <div key={index} className="cursor-pointer">
+            <div
+              key={index}
+              className="cursor-pointer  hover:shadow-2xl hover:transition-all hover:duration-300 hover:scale-105"
+            >
               <img
                 className="h-auto max-w-full rounded-lg"
                 src={item.path}
@@ -71,22 +80,23 @@ const Gallery = () => {
   );
 };
 
-//Tag OR Filters
-// eslint-disable-next-line react/prop-types
-const Tag = ({ filter, filterImages,activeFilter,setActiveFilter }) => {
-  return (
-    <div
-     className={filter==activeFilter ? "bg-blue-800 text-white rounded-md p-2 cursor-pointer" : "bg-gray-800 text-white rounded-md p-2 cursor-pointer"}
-      onClick={() => 
-        {
-          filterImages(filter);
-          setActiveFilter(filter);
-        }
-        }
-    >
-      {filter}
-    </div>
-  );
-};
-
 export default Gallery;
+
+//Previously used inplace of modernButton
+// const Tag = ({ filter, filterImages, activeFilter, setActiveFilter }) => {
+//   return (
+//     <div
+//       className={
+//         filter == activeFilter
+//           ? "bg-blue-800 text-white rounded-md p-2 cursor-pointer"
+//           : "bg-gray-800 text-white rounded-md p-2 cursor-pointer"
+//       }
+//       onClick={() => {
+//         filterImages(filter);
+//         setActiveFilter(filter);
+//       }}
+//     >
+//       {filter}
+//     </div>
+//   );
+// };

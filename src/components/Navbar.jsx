@@ -31,7 +31,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <nav className="w-full top-0 sticky flex px-8 items-center py-4 bg-black ">
+    <nav className="w-full top-0 sticky flex px-8 items-center py-4 bg-black z-10">
       <div className="w-[min(1100px,100%)] mx-auto flex flex-row justify-between items-center gap-8">
       
         <section className="flex items-center gap-4">

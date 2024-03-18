@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-gradient-1 {
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex:  0 0 250px;  
+  margin: 10px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+   /* Add position relative to the card */
+}
+
+.image {
+  width: 100%;
+  height: 80%;
+  display: block;
+  transition: filter 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.card:hover img {
+  filter: blur(8px); /* Apply blur effect on hover */
+
+}
+
+.hover-text {
+   position: absolute;/* Position the text div relative to the card */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the div */
+  text-align: center; /* Align the text center */
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card:hover .text {
+  opacity: 1; /* Show the text on hover */
+}
+
+.h1 {
+  font-size: 20px; /* Adjust font size as needed */
+}
+
+.icons {
+  margin-top: 10px; /* Add space between text and icons */
+}
+
+.icons a {
+  display: inline-block; /* Display icons in line */
+  margin: 0 5px; /* Adjust spacing between icons */
+  color: #000; /* Set icon color */
+  text-decoration: none; /* Remove default underline */
+  font-size: 20px; /* Adjust icon size as needed */
+}
+
+/* LinkedIn icon */
+.linkedin-icon:hover {
+  color: #0077b5; /* Change icon color on hover */
+}
+
+/* Email icon */
+.email-icon:hover {
+  color: #ea4335; /* Change icon color on hover */
+}
+
+#linkhover {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.card:hover #linkhover {
+  opacity: 1;
+  z-index: 0;
+}

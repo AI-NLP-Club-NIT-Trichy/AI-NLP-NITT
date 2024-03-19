@@ -21,29 +21,31 @@ export default function Events() {
   ];
 
   return (
-    <div className=" w-full">
+    <div className=" text-left max-sm:w-100">
       {clubEvents.map((event, index) => (
         <div key={index}>
-          <div className="w-full p-3 ">
-            <div className=" w-full mx-auto p-6 rounded-lg shadow-lg my-4 ">
-              <div className="py-8 text-base leading-7 space-y-6 text-gray-600 ">
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className=" w-full ">
-                    <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-2xl mb-10 ">
+          <div
+            // style={{ marginLeft: "5rem", marginRight: "2.5rem" }}
+            className=" max-sm:w-50"
+          >
+            <div className="p-6 rounded-lg  my-4  ">
+              <div className="p-6 ml-18 -mr-16 text-gray-600 max-sm: p-0 ml-9">
+                <div className="grid gap-4 ml-8 sm:grid-cols-2 ">
+                  <div className="col-1 ml-10 max-sm:col-1 pr-8">
+                    <h2 className="font-bold text-gray-900 sm:text-3xl mb-10 ">
                       {event.title}
                     </h2>
-                    <p>{event.description}</p>
+                    <p style={{ fontSize: "20px" }}>{event.description}</p>
                   </div>
                   <div
-                    className="flex m-auto"
+                    className="m-auto sm:ml-16"
                     style={{
-                      position: "relative",
                       height: "100%",
-                      width: "50%",
+                      width: "65%",
                     }}
                   >
                     <img
-                      className="w-full  transition duration-300 ease-in-out hover:scale-110 rounded-xl "
+                      className="w-100 transition duration-300 ease-in-out hover:scale-110 rounded-xl "
                       src={event.image}
                       alt={event.title}
                     />

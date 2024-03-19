@@ -5,7 +5,7 @@ export const membersData2021 = [
     name: "Mayank",
     batch: "MCA'21",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2021/Mayank_21.jpg",
   },
   {
@@ -13,7 +13,7 @@ export const membersData2021 = [
     name: "Tanmoy",
     batch: "MSC'20",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2021/Tanmoy_20.jpg",
   },
   {
@@ -21,7 +21,7 @@ export const membersData2021 = [
     name: "Cheshta",
     batch: "MCA'21",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2021/Cheshta_21.jpg",
   },
   {
@@ -29,7 +29,7 @@ export const membersData2021 = [
     name: "UTSA",
     batch: "MSC'20",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2021/Utsa_20.png",
   },
 ];
@@ -40,7 +40,7 @@ export const membersData2022 = [
     name: "Namrita",
     batch: "MCA'22",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2022/Namrita_22.jpg",
   },
   {
@@ -48,7 +48,7 @@ export const membersData2022 = [
     name: "Ankur",
     batch: "MCA'22",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2022/Ankur_22.jpg",
   },
   {
@@ -56,7 +56,7 @@ export const membersData2022 = [
     name: "Vishesh",
     batch: "MCA'22",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2022/Vishesh_22.png",
   },
   {
@@ -64,7 +64,7 @@ export const membersData2022 = [
     name: "Ravindra",
     batch: "MCA'22",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2022/Ravindra_22.jpg",
   },
 ];
@@ -75,7 +75,7 @@ export const membersData2023 = [
     name: "Aayushi",
     batch: "MCA'23",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2023/Aayushi_23.jpg",
   },
   {
@@ -83,7 +83,7 @@ export const membersData2023 = [
     name: "Mohit",
     batch: "MSC'22",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2023/Mohit_22.jpg",
   },
   {
@@ -91,7 +91,7 @@ export const membersData2023 = [
     name: "Pankaj",
     batch: "MCA'23",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2023/Pankaj_23.jpg",
   },
   {
@@ -99,7 +99,7 @@ export const membersData2023 = [
     name: "Suruchi",
     batch: "MCA'23",
     position: "Member",
-    linkedin: "https://www.linkedin.com/in/vivekkumaryadaav/",
+    linkedin: "unavailable",
     imagePath: "./images/members/2023/Suruchi_23.jpg",
   },
 ];

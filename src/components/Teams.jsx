@@ -19,9 +19,7 @@ const Teams = () => {
           })}
         </div>
 
-        <div className="text-4xl mt-10 w-full  text-start p-5">
-          BATCH 2025
-        </div>
+        <div className="text-4xl mt-10 w-full  text-start p-5">BATCH 2025</div>
         <div className="flex flex-wrap justify-center items-center gap-6">
           {membersData2025.map((details, index) => {
             return <ProfileCard details={details} key={index} />;
@@ -37,18 +35,14 @@ const Teams = () => {
           })}
         </div>
 
-        <div className="text-4xl mt-10 w-full  text-start p-5">
-          BATCH 2022
-        </div>
+        <div className="text-4xl mt-10 w-full  text-start p-5">BATCH 2022</div>
         <div className="flex flex-wrap justify-center items-center gap-5">
           {membersData2022.map((details, index) => {
             return <ProfileCard details={details} key={index} />;
           })}
         </div>
 
-        <div className="text-4xl mt-10 w-full  text-start p-5">
-          BATCH 2021
-        </div>
+        <div className="text-4xl mt-10 w-full  text-start p-5">BATCH 2021</div>
         <div className="flex flex-wrap justify-center items-center gap-5">
           {membersData2021.map((details, index) => {
             return <ProfileCard details={details} key={index} />;

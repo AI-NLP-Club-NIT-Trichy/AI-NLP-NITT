@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  /* background-color: red !important; */
+  color: black !important;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 648px) {
+  .grid {
+    margin: auto;
+    width: 100% !important;
+  }
+
+  h2 {
+    /* font-weight: 200; */
+    font-size: larger !important;
+  }
+
+  img {
+    height: 100% !important;
+    width: 100% !important;
+    position: sticky;
+  }
+  p {
+    font-size: small !important;
+  }
+}

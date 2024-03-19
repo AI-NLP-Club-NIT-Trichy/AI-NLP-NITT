@@ -1,6 +1,5 @@
 .glyph-element {
   text-transform: uppercase;
-  color: canvasText;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -12,7 +11,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: hsl(0 0% 100%);
+  /* background: hsl(0 0% 100%); */
   opacity: calc(var(--intent, 0) * 0.0875);
   transition: opacity 0.2s;
 }
@@ -43,7 +42,7 @@
   position: absolute;
   display: inline-block;
   inset: 0;
-  color: canvasText;
+  color: white;
 }
 
 .glyph-element:is(:hover, :focus-visible) > span:not(.glyph-sr-only)::after {

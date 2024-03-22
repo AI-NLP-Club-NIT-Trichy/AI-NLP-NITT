@@ -21,39 +21,25 @@ export default function Events() {
   ];
 
   return (
-    <div className=" text-left max-sm:w-100">
+    <div className="w-full flex items-center justify-center flex-col mb-5">
       {clubEvents.map((event, index) => (
-        <div key={index}>
-          <div
-            // style={{ marginLeft: "5rem", marginRight: "2.5rem" }}
-            className=" max-sm:w-50"
-          >
-            <div className="p-6 rounded-lg  my-4  ">
-              <div className="p-6 ml-18 -mr-16 text-gray-600 max-sm: p-0 ml-9">
-                <div className="grid gap-4 ml-8 sm:grid-cols-2 ">
-                  <div className="col-1 ml-10 max-sm:col-1 pr-8">
-                    <h2 className="font-bold text-gray-900 sm:text-3xl mb-10 ">
-                      {event.title}
-                    </h2>
-                    <p style={{ fontSize: "20px" }}>{event.description}</p>
-                  </div>
-                  <div
-                    className="m-auto sm:ml-16"
-                    style={{
-                      height: "100%",
-                      width: "65%",
-                    }}
-                  >
-                    <img
-                      className="w-100 transition duration-300 ease-in-out hover:scale-110 rounded-xl "
-                      src={event.image}
-                      alt={event.title}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div
+          className="flex items-center justify-center gap-6 p-0.5 lg:p-6 w-full lg:w-[1200px] flex-col lg:flex-row"
+          key={index}
+        >
+          <div className="pl-5 pr-5 pb-5 mt-10">
+            <h2 className="font-bold text-2xl text-gray-900 sm:text-3xl mb-5 lg:mb-10">
+              {event.title}
+            </h2>
+            <p className="text-base mr-0 lg:mr-10 sm:text-xl">
+              {event.description}
+            </p>
           </div>
+          <img
+            className="w-80 lg:w-[600px] h-64 lg:h-80 transition duration-300 ease-in-out hover:scale-110 rounded-xl"
+            src={event.image}
+            alt={event.title}
+          />
         </div>
       ))}
     </div>

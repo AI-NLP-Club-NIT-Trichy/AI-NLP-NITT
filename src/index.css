@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* the navlink used in navbar adds an active class to the current link */
+.active
+{
+    color: aqua;
+}
+

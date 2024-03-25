@@ -21,6 +21,7 @@ export default function Events() {
   ];
 
   return (
+
     <div className="w-full flex items-center justify-center flex-col mb-5">
       {clubEvents.map((event, index) => (
         <div
@@ -42,6 +43,7 @@ export default function Events() {
           />
         </div>
       ))}
+
     </div>
   );
 }

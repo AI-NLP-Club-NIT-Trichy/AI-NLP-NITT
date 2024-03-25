@@ -21,41 +21,29 @@ export default function Events() {
   ];
 
   return (
-    <div className="w-full">
-      <div className=" w-[min(1100px,100%)] m-auto">
-        {clubEvents.map((event, index) => (
-          <div key={index}>
-            <div className="w-full p-3 ">
-              <div className=" w-full mx-auto p-6 rounded-lg shadow-lg my-4 ">
-                <div className="py-8 text-base leading-7 space-y-6 text-gray-600 ">
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <div className=" w-full ">
-                      <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-2xl mb-10 ">
-                        {event.title}
-                      </h2>
-                      <p>{event.description}</p>
-                    </div>
-                    <div
-                      className="flex m-auto"
-                      style={{
-                        position: "relative",
-                        height: "100%",
-                        width: "50%",
-                      }}
-                    >
-                      <img
-                        className="w-full  transition duration-300 ease-in-out hover:scale-110 rounded-xl "
-                        src={event.image}
-                        alt={event.title}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+    <div className="w-full flex items-center justify-center flex-col mb-5">
+      {clubEvents.map((event, index) => (
+        <div
+          className="flex items-center justify-center gap-6 p-0.5 lg:p-6 w-full lg:w-[1200px] flex-col lg:flex-row"
+          key={index}
+        >
+          <div className="pl-5 pr-5 pb-5 mt-10">
+            <h2 className="font-bold text-2xl text-gray-900 sm:text-3xl mb-5 lg:mb-10">
+              {event.title}
+            </h2>
+            <p className="text-base mr-0 lg:mr-10 sm:text-xl">
+              {event.description}
+            </p>
           </div>
-        ))}
-      </div>
+          <img
+            className="w-80 lg:w-[600px] h-64 lg:h-80 transition duration-300 ease-in-out hover:scale-110 rounded-xl"
+            src={event.image}
+            alt={event.title}
+          />
+        </div>
+      ))}
+
     </div>
   );
 }

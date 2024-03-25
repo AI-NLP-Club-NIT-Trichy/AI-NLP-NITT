@@ -3,6 +3,7 @@ import {
   membersData2021,
   membersData2022,
   membersData2023,
+  membersData2024,
   membersData2025,
   membersData2026,
 } from "../../public/members_data";
@@ -22,6 +23,15 @@ const Teams = () => {
         <div className="text-4xl mt-10 w-full  text-start p-5">BATCH 2025</div>
         <div className="flex flex-wrap justify-center items-center gap-6">
           {membersData2025.map((details, index) => {
+            return <ProfileCard details={details} key={index} />;
+          })}
+        </div>
+
+        <div className="text-4xl mt-10 p-4 w-full  text-start p-5">
+          BATCH 2024
+        </div>
+        <div className="flex flex-wrap justify-center items-center gap-5">
+          {membersData2024.map((details, index) => {
             return <ProfileCard details={details} key={index} />;
           })}
         </div>

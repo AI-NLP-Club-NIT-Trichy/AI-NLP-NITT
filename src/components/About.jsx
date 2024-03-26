@@ -17,14 +17,14 @@ const Faculty = (props) => {
         <div className='md:w-10/12 mb-24 mt-10'>
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.4, duration: 0.3 }} viewport={{ once: false }} className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{ transitionDelay: '200ms' }}>FACULTY ADVISOR</motion.div>
           <motion.h3 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.3 }} viewport={{ once: false }} className="text-[28px] md:text-[40px] max-md:leading-8 max-lg:leading-10 lg:text-5xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{ transitionDelay: '300ms' }}>
-            <span className='text-[#7ee787]'>Dr.(Mrs.) S. Sangeetha</span>
+            <span className=''>Dr.(Mrs.) S. Sangeetha</span>
           </motion.h3>
         </div>
       </div>
 
       <div className='flex justify-between items-center md:space-x-10 max-md:flex-col ml-auto'>
         <div className='w-full md:w-1/4 flex justify-center'>
-          <img className='object-cover object-center w-full max-w-xs md:max-w-full h-auto rounded-lg' src='/images/staff/dr_sangeetha1.jpg' alt='Dr. Sangeetha' />
+          <img className='object-cover object-center w-full max-w-xs md:max-w-full h-auto  rounded-2xl' src='/images/staff/dr_sangeetha1.jpg' alt='Dr. Sangeetha' />
         </div>
 
         <div className='w-full md:w-2/3 border rounded-xl border-transparent flex justify-center items-center bg-[#161b22] lg:pl-8 lg:pr-8 lg:py-8 sm:p-10 p-8'>
@@ -55,14 +55,14 @@ const Description = (props) => {
         <div className='md:w-10/12 mb-24'>
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.4, duration: 0.3 }} viewport={{ once: false }} className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{ transitionDelay: '200ms' }}>ABOUT AI & NLP CLUB</motion.div>
           <motion.h3 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.3 }} viewport={{ once: false }} className="text-[28px] md:text-[40px] max-md:leading-8 max-lg:leading-10 lg:text-5xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{ transitionDelay: '300ms' }}>
-            <span className="text-[#d1623d]">Unleash The Power of Language With Our </span> AI & NLP CLUB <span className="text-[#d1623d]">Where Innovation Speaks Volumes In Every Algorithm And Conversation. </span>
+            <span className="text-[#d1623d]"></span>
           </motion.h3>
         </div>
       </div>
       <div className='flex justify-between items-center md:space-x-10 max-md:flex-col ml-auto'>
 
         <div className='w-full md:w-1/4 flex justify-center'>
-          <img className='object-cover object-center w-full max-w-xs md:max-w-full h-auto rounded-lg' src='/images/ai-nlp-aboutus.jpg' alt='About Us Image' />
+          <img className='object-cover object-center w-full max-w-xs md:max-w-full h-auto rounded-xl' src='/images/ai-nlp-aboutus.jpg' alt='About Us Image' />
         </div>
 
 
@@ -113,13 +113,6 @@ const About = (props) => {
       <Hero></Hero>
       <Faculty></Faculty>
       <Description></Description>
-      <div className="flex flex-wrap justify-between items-center mt-7">
-        <img src="/images/social_media/instagram.png" alt="Instagram logo" className="my-3 w-16 sm:w-24 md:w-20 lg:w-20 xl:w-20 scale-50" />
-        <img src="/images/social_media/github.png" alt="Github logo" className="my-3 w-16 sm:w-24 md:w-20 lg:w-20 xl:w-20 scale-50" />
-        <img src="/images/social_media/Twitter.png" alt="Twitter logo" className="my-3 w-16 sm:w-24 md:w-20 lg:w-20 xl:w-20 scale-50" />
-        <img src="/images/social_media/linkedin.png" alt="Linked in logo" className="my-3 w-16 sm:w-24 md:w-20 lg:w-20 xl:w-20 scale-50" />
-        <img src="/images/social_media/facebook.png" alt="Facebook logo" className="my-3 w-16 sm:w-24 md:w-20 lg:w-20 xl:w-20 scale-50" />
-      </div>
 
     </div>
 

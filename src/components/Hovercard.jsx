@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion, useAnimation } from 'framer-motion'; // Import motion and useAnimation from framer-motion
+import React, { useState } from "react";
+import { motion, useAnimation } from "framer-motion"; // Import motion and useAnimation from framer-motion
 
 const HoverCard = ({ children, backgroundColor, direction, left }) => {
   const [hovered, setIsHovered] = useState(false);

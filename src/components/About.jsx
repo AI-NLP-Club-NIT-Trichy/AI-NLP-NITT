@@ -110,7 +110,7 @@ const About = (props) => {
   return (
     <div className=' w-[100%] lg:pt-10 md:px-10 mx-auto pt-8 bg-black	'>
 
-      <Hero></Hero>
+      {/* <Hero></Hero> */}
       <Faculty></Faculty>
       <Description></Description>
 

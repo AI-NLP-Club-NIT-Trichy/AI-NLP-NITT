@@ -23,14 +23,14 @@ export default function Events() {
   ];
 
   return (
-    <div className="w-full flex items-center justify-center flex-col mb-5">
+    <div className="bg-black text-white w-full flex items-center justify-center flex-col mb-5">
       {clubEvents.map((event, index) => (
         <div
-          className="flex items-center justify-center gap-6 p-0.5 lg:p-6 w-full lg:w-[1200px] flex-col lg:flex-row"
+          className=" flex items-center justify-center gap-6 p-0.5 lg:p-6 w-full lg:w-[1200px] flex-col lg:flex-row"
           key={index}
         >
           <div className="pl-5 pr-5 pb-5 mt-10">
-            <h2 className="font-bold text-2xl text-gray-900 sm:text-3xl mb-5 lg:mb-10">
+            <h2 className="font-bold text-2xl sm:text-3xl mb-5 lg:mb-10">
               {event.title}
             </h2>
             <p className="text-base mr-0 lg:mr-10 sm:text-xl">

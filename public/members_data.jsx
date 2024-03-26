@@ -110,11 +110,36 @@ export const membersData2023 = [
 export const membersData2025 = [
   {
     tag: "Batch 2025",
+    name: "Prasanjeet Karmakar",
+    position: "Member",
+    batch: "MCA'25",
+    linkedin: "https://www.linkedin.com/in/prasanjeet-karmakar-783067211/",
+    imagePath: "./images/members/2025/25_Prasanjeet.jpg",
+  },
+ 
+  {
+    tag: "Batch 2025",
+    name: "P Janardhan",
+    position: "Member",
+    batch: "MCA'25",
+    linkedin: "https://www.linkedin.com/in/pjanardhan7u",
+    imagePath: "./images/members/2025/25_Janardhan.jpg",
+  },
+  {
+    tag: "Batch 2025",
     name: "Chirag Agarwal",
     position: "Member",
     batch: "MCA'25",
     linkedin: "https://www.linkedin.com/in/chirag-agarwal-bb82a0198/",
     imagePath: "./images/members/2025/25_chirag.jpg",
+  },
+  {
+    tag: "Batch 2025",
+    name: "Surandra Meena",
+    position: "Member",
+    batch: "MCA'25",
+    linkedin: "https://in.linkedin.com/in/surandra-meena",
+    imagePath: "./images/members/2025/25_Surandra.jpg",
   },
   {
     tag: "Batch 2025",
@@ -133,14 +158,7 @@ export const membersData2025 = [
     linkedin: "https://in.linkedin.com/in/ashish-yogi-bb7b28169",
     imagePath: "./images/members/2025/25_Ashish.png",
   },
-  {
-    tag: "Batch 2025",
-    name: "P Janardhan",
-    position: "Member",
-    batch: "MCA'25",
-    linkedin: "https://www.linkedin.com/in/pjanardhan7u",
-    imagePath: "./images/members/2025/25_Janardhan.jpg",
-  },
+ 
   {
     tag: "Batch 2025",
     name: "Naman jain",
@@ -158,22 +176,7 @@ export const membersData2025 = [
     linkedin :"https://www.linkedin.com/in/pallavi-priya-333763244",
     imagePath: "./images/members/2025/25_Pallavi.jpeg"
   },
-  {
-    tag: "Batch 2025",
-    name: "Prasanjeet Karmakar",
-    position: "Member",
-    batch: "MCA'25",
-    linkedin: "https://www.linkedin.com/in/prasanjeet-karmakar-783067211/",
-    imagePath: "./images/members/2025/25_Prasanjeet.jpg",
-  },
-  {
-    tag: "Batch 2025",
-    name: "Surandra Meena",
-    position: "Member",
-    batch: "MCA'25",
-    linkedin: "https://in.linkedin.com/in/surandra-meena",
-    imagePath: "./images/members/2025/25_Surandra.jpg",
-  },
+
   {
     tag: "Batch 2025",
     name: "Himanshu Upadhyay",

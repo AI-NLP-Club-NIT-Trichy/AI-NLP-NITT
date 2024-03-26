@@ -1,7 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import gsap from "gsap";
 import "./Background.css";
 const Background = () => {
+  const [screenSize, setScreenSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
   useEffect(() => {
     (function () {
       var width,
@@ -19,8 +24,9 @@ const Background = () => {
       addListeners();
 
       function initHeader() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        width = screenSize.width;
+        height = screenSize.height;
+
         target = { x: width / 2, y: height / 2 };
 
         largeHeader = document.getElementById("large-header");
@@ -115,8 +121,8 @@ const Background = () => {
       }
 
       function resize() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        width = screenSize.width;
+        height = screenSize.height;
         largeHeader.style.height = height + "px";
         canvas.width = width;
         canvas.height = height;
@@ -209,14 +215,23 @@ const Background = () => {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
       }
     })();
-  }, []);
+
+    const handleResize = () => {
+      setScreenSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [screenSize]);
 
   return (
     <div id="large-header" className="large-header">
-      <canvas id="demo-canvas"></canvas>
-      <h1 className="main-title">
-        Connect <span className="thin">Three</span>
-      </h1>
+      <canvas id="demo-canvas"></canvas>\
     </div>
   );
 };

@@ -1,37 +1,37 @@
-import { NavLink, Link } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, Link } from 'react-router-dom'
+import { useState } from 'react'
 
-import { FiMenu } from "react-icons/fi";
-import { IoCloseOutline } from "react-icons/io5";
-import clsx from "classnames";
+import { FiMenu } from 'react-icons/fi'
+import { IoCloseOutline } from 'react-icons/io5'
+import clsx from 'classnames'
 
 export default function Navbar() {
-  const [isSideMenuOpen, setMenu] = useState(false);
+  const [isSideMenuOpen, setMenu] = useState(false)
 
   const navlinks = [
     {
-      labe: "Home",
-      link: "/",
+      labe: 'Home',
+      link: '/',
     },
     {
-      labe: "About",
-      link: "/about",
+      labe: 'About',
+      link: '/about',
     },
     {
-      labe: "Teams",
-      link: "/teams",
+      labe: 'Teams',
+      link: '/teams',
     },
     {
-      labe: "Events",
-      link: "/events",
+      labe: 'Events',
+      link: '/events',
     },
     {
-      labe: "Gallery",
-      link: "/gallery",
+      labe: 'Gallery',
+      link: '/gallery',
     },
-  ];
+  ]
   return (
-    <nav className="w-full top-0 sticky flex px-8 items-center py-4 bg-black z-10">
+    <nav className="w-full top-0 sticky flex px-8 items-center py-4 bg-black z-50">
       <div className="w-[min(1100px,100%)] mx-auto flex flex-row justify-between items-center gap-8">
         <section className="flex items-center gap-4">
           {/* Logo*/}
@@ -48,7 +48,7 @@ export default function Navbar() {
           {navlinks.map((links, index) => (
             <NavLink
               key={index}
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               className="group relative text-xl text-[#8b8888] px-5 py-2 transition  hover:text-[#0ef] duration-500"
               to={links.link}
             >
@@ -67,8 +67,8 @@ export default function Navbar() {
       {/* sidebar mobile menu */}
       <div
         className={clsx(
-          "lg:hidden fixed top-0 left-0 h-full w-screen backdrop-blur-sm bg-black/50",
-          isSideMenuOpen ? "  " : "hidden"
+          'lg:hidden fixed top-0 left-0 h-full w-screen backdrop-blur-sm bg-black/50',
+          isSideMenuOpen ? '  ' : 'hidden'
         )}
       >
         <section className="absolute flex flex-col top-0 right-0 w-56 text-white bg-black h-screen p-8 gap-8 z-50 ">
@@ -81,7 +81,7 @@ export default function Navbar() {
             <NavLink
               key={index}
               onClick={() => setMenu(false)}
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               className="group relative text-xl text-[#8b8888] px-5 py-2 transition  hover:text-[#0ef] duration-500"
               to={links.link}
             >
@@ -92,5 +92,5 @@ export default function Navbar() {
         </section>
       </div>
     </nav>
-  );
+  )
 }

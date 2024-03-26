@@ -1,16 +1,18 @@
 /* Header */
 .large-header {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  top: 0;
   background: #333;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  z-index: 1;
+  z-index: -10;
 }
 
 #large-header {
   background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
+  background-repeat: repeat;
+  overflow: hidden;
 }
 
 .main-title {

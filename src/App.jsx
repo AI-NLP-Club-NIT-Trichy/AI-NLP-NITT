@@ -6,14 +6,13 @@ import Teams from "./components/Teams";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
-import Background from "./components/background/Background";
+import ParticlesBG from "./components/ParticlesBG/ParticlesBG";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <Navbar />
-        <Background />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>

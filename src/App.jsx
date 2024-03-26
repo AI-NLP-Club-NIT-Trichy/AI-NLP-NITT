@@ -6,6 +6,7 @@ import Teams from "./components/Teams";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
+import ParticlesBG from "./components/ParticlesBG/ParticlesBG";
 
 function App() {
   return (

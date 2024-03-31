@@ -2,19 +2,19 @@
 const imageList = [
   {
     tag: "AI Lang Pro",
-    path: "/images/gallery/ai_lang_pro_2024/13.jpg",
+    path: "/images/gallery/ai_lang_pro_2024/13.jpeg",
   },
   {
     tag: "AI Lang Pro",
-    path: "/images/gallery/ai_lang_pro_2024/14.jpg",
+    path: "/images/gallery/ai_lang_pro_2024/14.jpeg",
   },
   {
     tag: "AI Lang Pro",
-    path: "/images/gallery/ai_lang_pro_2024/15.jpg",
+    path: "/images/gallery/ai_lang_pro_2024/15.jpeg",
   },
   {
     tag: "AI Lang Pro",
-    path: "/images/gallery/ai_lang_pro_2024/16.jpg",
+    path: "/images/gallery/ai_lang_pro_2024/16.jpeg",
   },
 
   {

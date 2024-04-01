@@ -1,6 +1,23 @@
 //Comtains images data with tag
 const imageList = [
   {
+    tag: "AI Lang Pro",
+    path: "/images/gallery/ai_lang_pro_2024/13.jpeg",
+  },
+  {
+    tag: "AI Lang Pro",
+    path: "/images/gallery/ai_lang_pro_2024/14.jpeg",
+  },
+  {
+    tag: "AI Lang Pro",
+    path: "/images/gallery/ai_lang_pro_2024/15.jpeg",
+  },
+  {
+    tag: "AI Lang Pro",
+    path: "/images/gallery/ai_lang_pro_2024/16.jpeg",
+  },
+
+  {
     tag: "Workshop",
     path: "/images/gallery/1.jpg",
   },
@@ -33,11 +50,11 @@ const imageList = [
     path: "/images/gallery/9.jpg",
   },
   {
-    tag: "AI Lang Pro'19",
+    tag: "AI Lang Pro",
     path: "/images/gallery/7.jpg",
   },
   {
-    tag: "AI Lang Pro'19",
+    tag: "AI Lang Pro",
     path: "/images/gallery/10.jpg",
   },
   {

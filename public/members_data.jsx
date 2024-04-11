@@ -8,8 +8,7 @@ export const membersData2021 = [
     linkedin: "unavailable",
     imagePath: "./images/members/2021/Mayank_21.jpg",
   },
-  
- 
+
   {
     tag: "Batch 2021",
     name: "Tanmoy",
@@ -34,7 +33,6 @@ export const membersData2021 = [
     linkedin: "unavailable",
     imagePath: "./images/members/2021/Utsa_20.png",
   },
-  
 ];
 
 export const membersData2022 = [
@@ -111,19 +109,45 @@ export const membersData2025 = [
   {
     tag: "Batch 2025",
     name: "Prasanjeet Karmakar",
-    position: "Member",
+    position: "President",
     batch: "MCA'25",
     linkedin: "https://www.linkedin.com/in/prasanjeet-karmakar-783067211/",
     imagePath: "./images/members/2025/25_Prasanjeet.jpg",
   },
- 
+  {
+    tag: "Batch 2025",
+    name: "Surandra Meena",
+    position: "Vice President & Head of AI",
+    batch: "MCA'25",
+    linkedin: "https://in.linkedin.com/in/surandra-meena",
+    imagePath: "./images/members/2025/25_Surandra.jpg",
+  },
+
   {
     tag: "Batch 2025",
     name: "P Janardhan",
-    position: "Member",
+    position: "Head of Web Team",
     batch: "MCA'25",
     linkedin: "https://www.linkedin.com/in/pjanardhan7u",
     imagePath: "./images/members/2025/25_Janardhan.jpg",
+  },
+  {
+    tag: "Batch 2025",
+    name: "Naman jain",
+    position: "Overall Coordinator",
+    batch: "MCA'25",
+    linkedin:
+      "https://www.linkedin.com/in/naman-jain-9794b61b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    imagePath: "./images/members/2025/25_Naman.jpg",
+  },
+  {
+    tag: "Batch 2025",
+    name: "Vikash Patel",
+    position: "Overall Coordinator",
+    batch: "MCA'25",
+    linkedin:
+      "https://www.linkedin.com/in/vikash-patel-816a6b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    imagePath: "./images/members/2025/25_Vikash.jpg",
   },
   {
     tag: "Batch 2025",
@@ -133,14 +157,7 @@ export const membersData2025 = [
     linkedin: "https://www.linkedin.com/in/chirag-agarwal-bb82a0198/",
     imagePath: "./images/members/2025/25_chirag.jpg",
   },
-  {
-    tag: "Batch 2025",
-    name: "Surandra Meena",
-    position: "Member",
-    batch: "MCA'25",
-    linkedin: "https://in.linkedin.com/in/surandra-meena",
-    imagePath: "./images/members/2025/25_Surandra.jpg",
-  },
+
   {
     tag: "Batch 2025",
     name: "Mihir Kathpal",
@@ -158,23 +175,14 @@ export const membersData2025 = [
     linkedin: "https://in.linkedin.com/in/ashish-yogi-bb7b28169",
     imagePath: "./images/members/2025/25_Ashish.png",
   },
- 
-  {
-    tag: "Batch 2025",
-    name: "Naman jain",
-    position: "Member",
-    batch: "MCA'25",
-    linkedin:
-      "https://www.linkedin.com/in/naman-jain-9794b61b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    imagePath: "./images/members/2025/25_Naman.jpg",
-  },
+
   {
     tag: "Batch 2025",
     name: "Pallavi Priya",
     position: "Member",
     batch: "MCA'25",
-    linkedin :"https://www.linkedin.com/in/pallavi-priya-333763244",
-    imagePath: "./images/members/2025/25_Pallavi.jpeg"
+    linkedin: "https://www.linkedin.com/in/pallavi-priya-333763244",
+    imagePath: "./images/members/2025/25_Pallavi.jpeg",
   },
 
   {
@@ -198,17 +206,9 @@ export const membersData2025 = [
     name: "Aryan Gogia",
     position: "Member",
     batch: "MCA'25",
-    linkedin: "https://www.linkedin.com/in/aryan-gogia-a66901244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    imagePath: "./images/members/2025/25_Aryan.jpg",
-  },
-  {
-    tag: "Batch 2025",
-    name: "Vikash Patel",
-    position: "Member",
-    batch: "MCA'25",
     linkedin:
-      "https://www.linkedin.com/in/vikash-patel-816a6b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    imagePath: "./images/members/2025/25_Vikash.jpg",
+      "https://www.linkedin.com/in/aryan-gogia-a66901244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    imagePath: "./images/members/2025/25_Aryan.jpg",
   },
 ];
 
@@ -252,7 +252,7 @@ export const membersData2024 = [
     position: "Member",
     linkedin: "https://www.linkedin.com/in/meenaharish/",
     imagePath: "./images/members/2024/Harish_Kumar_21.jpg",
-  }, 
+  },
   {
     tag: "Batch 2024",
     name: "Lishu Gupta",
@@ -261,9 +261,7 @@ export const membersData2024 = [
     linkedin: "https://www.linkedin.com/in/lishugupta652/",
     imagePath: "./images/members/2024/Lishu_Gupta.png",
   },
-  
 ];
-
 
 export const membersData2026 = [
   {
@@ -329,7 +327,7 @@ export const membersData2026 = [
     position: "Member",
     batch: "MCA'26",
     linkedin: "https://www.linkedin.com/in/shikhar-mishra-490248224/",
-    imagePath: "./images/members/2026/26_Sikhar.jpg"
+    imagePath: "./images/members/2026/26_Sikhar.jpg",
   },
   {
     tag: "Batch 2026",

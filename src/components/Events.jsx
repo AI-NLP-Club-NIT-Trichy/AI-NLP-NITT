@@ -3,6 +3,15 @@ import Background from "./background/Background";
 export default function Events() {
   const clubEvents = [
     {
+      title: "AI Lang Pro 2024",
+      description:`AI Lang Pro 2024 is more than just a hackathon; it's a convergence point for aspiring AI enthusiasts and seasoned ML practitioners to explore the cutting-edge of technology. Participants will encounter an intriguing problem statement that will challenge them to craft AI/ML/DL models capable of predicting relationships between entities within provided sentences.
+
+      Financial Relation Prediction:
+      In this challenge, participants will undertake the task of constructing predictive models with the ability to discern the relationship between two designated entities within a given sentence.`
+      ,
+      image: "../images/events/ailangpro24.jpeg",
+    },
+    {
       title: "Meteor",
       description:
         "To give your brain a creative spin by testing your technical skills, this event was organized by TEAM AI & NLP on 2nd February 2020. It consists of questions revolving debugging, coding and objective type. The event was a great success as it involves variety of questions encouraging more and more students to participate. The winners of this competition were then rewarded with amazing cash prizes and certificates.",
@@ -23,14 +32,14 @@ export default function Events() {
   ];
 
   return (
-    <div className="w-full flex items-center justify-center flex-col mb-5">
+    <div className="bg-black text-white w-full flex items-center justify-center flex-col">
       {clubEvents.map((event, index) => (
         <div
-          className="flex items-center justify-center gap-6 p-0.5 lg:p-6 w-full lg:w-[1200px] flex-col lg:flex-row"
+          className=" flex items-center justify-center gap-6 p-0.5 lg:p-6 w-full lg:w-[1400px] flex-col lg:flex-row"
           key={index}
         >
-          <div className="pl-5 pr-5 pb-5 mt-10">
-            <h2 className="font-bold text-2xl text-gray-900 sm:text-3xl mb-5 lg:mb-10">
+          <div className="pl-3 pr-5 pb-5 mt-10">
+            <h2 className="font-bold text-2xl sm:text-3xl mb-5 lg:mb-10">
               {event.title}
             </h2>
             <p className="text-base mr-0 lg:mr-10 sm:text-xl">

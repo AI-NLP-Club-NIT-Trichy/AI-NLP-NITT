@@ -1,5 +1,4 @@
 import { Carousel } from "antd";
-import "./Background.css";
 
 const elements = [
   {

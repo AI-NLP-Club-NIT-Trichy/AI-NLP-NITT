@@ -1,5 +1,3 @@
-import Background from "./background/Background";
-
 export default function Events() {
   const clubEvents = [
     {

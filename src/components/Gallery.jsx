@@ -32,7 +32,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className=" w-[min(1100px,100%)] m-auto">
+    <div className=" w-[min(1100px,100%)] m-auto bg-blue">
       {/* Filters List  */}
       <div className=" m-8 flex flex-row gap-y-3 gap-x-6 justify-center flex-wrap">
         {filters.map((filter, index) => (

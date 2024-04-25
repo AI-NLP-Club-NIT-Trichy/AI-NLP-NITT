@@ -5,12 +5,10 @@ const Home = () => {
   return (
     <div
       style={{
-        backgroundImage:
-          'url(/images/Helix_bg.jpg)',
+        backgroundImage: "url(/images/Helix_bg.jpg)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
-
       }}
       className="relative w-full h-[calc(100vh-80px-67.2px)]  sm:h-[calc(100vh-80px-90px)] overflow-hidden bg-black"
     >

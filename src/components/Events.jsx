@@ -29,7 +29,7 @@ export default function Events() {
   ];
 
   return (
-    <div className="bg-black text-white w-full flex items-center justify-center flex-col">
+    <div className=" text-white w-full flex items-center justify-center flex-col">
       {clubEvents.map((event, index) => (
         <div
           className=" flex items-center justify-center gap-6 p-0.5 lg:p-6 w-full lg:w-[1400px] flex-col lg:flex-row"

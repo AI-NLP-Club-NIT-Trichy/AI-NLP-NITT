@@ -10,7 +10,7 @@ import {
 
 const Teams = () => {
   return (
-    <div className=" bg-black">
+    <div className=" ">
       <div className="w-[min(1200px,100%)] text-white  m-auto p-10 flex flex-col justify-center items-center">
         <div className="text-4xl  w-full  text-start p-5">BATCH 2026</div>
 

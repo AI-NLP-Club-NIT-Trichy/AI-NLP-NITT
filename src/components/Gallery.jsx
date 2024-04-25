@@ -33,7 +33,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="bg-black w-full h-full">
+    <div className="w-full h-full">
       <div className="w-[min(1200px,100%)] text-white  m-auto p-10 flex flex-col justify-center items-center">
         {/* Filters List  */}
         <div className=" m-8 flex flex-row gap-y-3 gap-x-6 justify-center flex-wrap">

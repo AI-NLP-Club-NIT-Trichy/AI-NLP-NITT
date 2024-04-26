@@ -34,9 +34,9 @@ const Gallery = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="w-[min(1200px,100%)] text-white  m-auto p-10 flex flex-col justify-center items-center">
+      <div className="w-[min(1200px,100%)] text-white  m-auto max-sm:p-1 p-10 flex flex-col justify-center items-center">
         {/* Filters List  */}
-        <div className=" m-8 flex flex-row gap-y-3 gap-x-6 justify-center flex-wrap">
+        <div className=" m-4 flex flex-row max-sm:gap-2 gap-y-3 gap-x-6 justify-center flex-wrap">
           {filters.map((filter, index) => (
             <Tag
               key={index}
@@ -90,8 +90,8 @@ const Tag = ({ filter, filterImages, activeFilter, setActiveFilter }) => {
     <div
       className={
         filter == activeFilter
-          ? "bg-blue-800 text-white rounded-md p-2 cursor-pointer"
-          : "bg-gray-800 text-white rounded-md p-2 cursor-pointer"
+          ? "bg-blue-800 text-white rounded-md p-2 cursor-pointer max-sm:text-xs"
+          : "bg-gray-800 text-white rounded-md p-2 cursor-pointer max-sm:text-xs"
       }
       onClick={() => {
         filterImages(filter);

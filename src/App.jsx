@@ -6,13 +6,14 @@ import Teams from "./components/Teams";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
-import ParticlesBG from "./components/ParticlesBG/ParticlesBG";
+
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="flex flex-col min-h-screen  ">
         <Navbar />
+        <div className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
@@ -20,7 +21,8 @@ function App() {
           <Route path="/events" element={<Events />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
         </Routes>
-        <Footer />
+        </div>
+        <Footer className="mt-auto" />
       </div>
     </BrowserRouter>
   );

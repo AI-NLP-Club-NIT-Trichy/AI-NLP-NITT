@@ -2,6 +2,10 @@
 const imageList = [
   {
     tag: "AI Lang Pro",
+    path: "/images/gallery/ai_lang_pro_2024/16.jpeg",
+  },
+  {
+    tag: "AI Lang Pro",
     path: "/images/gallery/ai_lang_pro_2024/13.jpeg",
   },
   {
@@ -12,11 +16,6 @@ const imageList = [
     tag: "AI Lang Pro",
     path: "/images/gallery/ai_lang_pro_2024/15.jpeg",
   },
-  {
-    tag: "AI Lang Pro",
-    path: "/images/gallery/ai_lang_pro_2024/16.jpeg",
-  },
-
   {
     tag: "Workshop",
     path: "/images/gallery/1.jpg",

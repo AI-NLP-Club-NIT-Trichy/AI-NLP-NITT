@@ -2,11 +2,10 @@ export default function Events() {
   const clubEvents = [
     {
       title: "AI Lang Pro 2024",
-      description:`AI Lang Pro 2024 is more than just a hackathon; it's a convergence point for aspiring AI enthusiasts and seasoned ML practitioners to explore the cutting-edge of technology. Participants will encounter an intriguing problem statement that will challenge them to craft AI/ML/DL models capable of predicting relationships between entities within provided sentences.
+      description: `AI Lang Pro 2024 is more than just a hackathon; it's a convergence point for aspiring AI enthusiasts and seasoned ML practitioners to explore the cutting-edge of technology. Participants will encounter an intriguing problem statement that will challenge them to craft AI/ML/DL models capable of predicting relationships between entities within provided sentences.
 
       Financial Relation Prediction:
-      In this challenge, participants will undertake the task of constructing predictive models with the ability to discern the relationship between two designated entities within a given sentence.`
-      ,
+      In this challenge, participants will undertake the task of constructing predictive models with the ability to discern the relationship between two designated entities within a given sentence.`,
       image: "../images/events/ailangpro24.jpeg",
     },
     {
@@ -30,7 +29,7 @@ export default function Events() {
   ];
 
   return (
-    <div className="bg-black text-white w-full flex items-center justify-center flex-col">
+    <div className=" text-white w-full flex items-center justify-center flex-col">
       {clubEvents.map((event, index) => (
         <div
           className=" flex items-center justify-center gap-6 p-0.5 lg:p-6 w-full lg:w-[1400px] flex-col lg:flex-row"

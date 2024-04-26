@@ -104,11 +104,12 @@ const Hero = (props) => {
 
   );
 };
+
 const About = (props) => {
   const [hovered, setHovered] = useState(false);
   const [hovered1, setHovered1] = useState(false);
   return (
-    <div className=' w-[100%] lg:pt-10 md:px-10 mx-auto pt-8 bg-black	'>
+    <div className=' w-[100%] lg:pt-10 md:px-10 mx-auto pt-8 	'>
 
       {/* <Hero></Hero> */}
       <Faculty></Faculty>

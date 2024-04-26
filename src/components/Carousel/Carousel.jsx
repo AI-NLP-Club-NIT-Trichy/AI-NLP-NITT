@@ -22,20 +22,22 @@ const elements = [
 const carouselElements = elements.map((element) => {
   return (
     <div>
-      <img src={element.src} className="sm:h-[65vh] w-full object-cover" />
-      <p className="h-[30%] sm:text-[1rem] text-white mt-2">
-        {element.descripton}
-      </p>
+
+      <img src={element.src} className="h-[99%] w-full object-cover" />
+      <p className="text-white mt-2">{element.descripton}</p>
+
     </div>
   );
 });
 
 const CarouselElement = () => {
   return (
-    <div className="bg-black text-white">
+    <div>
       <Carousel
         autoplay
-        className="h-[75vh] w-[60vw] border-4 p-2 rounded-xl border-white"
+
+        className="flex flex-col h-[75vh] max-h-[400px] w-[90vw] max-w-[500px] border-4 p-2 rounded-xl border-white"
+
       >
         {carouselElements}
       </Carousel>

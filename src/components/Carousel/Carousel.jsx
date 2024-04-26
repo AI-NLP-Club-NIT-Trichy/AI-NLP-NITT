@@ -36,7 +36,7 @@ const CarouselElement = () => {
       <Carousel
         autoplay
 
-        className="flex flex-col h-[75vh] max-h-[400px] w-[90vw] max-w-[500px] border-4 p-2 rounded-xl border-white"
+        className="flex flex-col h-[34vh]   sm:h-[75vh] sm:max-h-[60vhpx] w-[90vw] sm:max-w-[70vw] border-4 p-2 rounded-xl border-white"
 
       >
         {carouselElements}

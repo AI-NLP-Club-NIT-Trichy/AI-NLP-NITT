@@ -27,7 +27,7 @@ const ProfileCard = ({ details }) => {
         </div>
       </div>
       {position != "Member" && (
-        <h2 className="text-md p-1 text-white  text-center">{position}</h2>
+        <h2 className="text-xl  p-1 text-white  text-center">{position}</h2>
       )}
     </div>
   );

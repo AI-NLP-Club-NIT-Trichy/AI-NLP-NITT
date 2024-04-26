@@ -7,57 +7,27 @@ import {
   membersData2025,
   membersData2026,
 } from "../../public/members_data";
+import Batch from "./Batch";
+
 
 const Teams = () => {
   return (
     <div className=" ">
       <div className="w-[min(1200px,100%)] text-white  m-auto p-10 flex flex-col justify-center items-center">
-        <div className="text-4xl  w-full  text-start p-5">BATCH 2026</div>
+        
+        <Batch year="BATCH 2026" membersData={membersData2026} />
 
-        <div className="flex flex-wrap justify-center items-center gap-5">
-          {membersData2026.map((details, index) => {
-            return <ProfileCard details={details} key={index} />;
-          })}
-        </div>
+        <Batch year="BATCH 2025" membersData={membersData2025} />
 
-        <div className="text-4xl mt-10 w-full  text-start p-5">BATCH 2025</div>
-        <div className="flex flex-wrap justify-center items-center gap-6">
-          {membersData2025.map((details, index) => {
-            return <ProfileCard details={details} key={index} />;
-          })}
-        </div>
+        <Batch year="BATCH 2024" membersData={membersData2024} />
 
-        <div className="text-4xl mt-10 p-4 w-full  text-start p-5">
-          BATCH 2024
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-5">
-          {membersData2024.map((details, index) => {
-            return <ProfileCard details={details} key={index} />;
-          })}
-        </div>
+        <Batch year="BATCH 2023" membersData={membersData2023} />
 
-        <div className="text-4xl mt-10 p-4 w-full  text-start p-5">
-          BATCH 2023
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-5">
-          {membersData2023.map((details, index) => {
-            return <ProfileCard details={details} key={index} />;
-          })}
-        </div>
+        <Batch year="BATCH 2022" membersData={membersData2022} />
 
-        <div className="text-4xl mt-10 w-full  text-start p-5">BATCH 2022</div>
-        <div className="flex flex-wrap justify-center items-center gap-5">
-          {membersData2022.map((details, index) => {
-            return <ProfileCard details={details} key={index} />;
-          })}
-        </div>
+        <Batch year="BATCH 2021" membersData={membersData2021} />
 
-        <div className="text-4xl mt-10 w-full  text-start p-5">BATCH 2021</div>
-        <div className="flex flex-wrap justify-center items-center gap-5">
-          {membersData2021.map((details, index) => {
-            return <ProfileCard details={details} key={index} />;
-          })}
-        </div>
+       
       </div>
     </div>
   );

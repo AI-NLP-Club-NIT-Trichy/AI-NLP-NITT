@@ -331,6 +331,14 @@ export const membersData2026 = [
   },
   {
     tag: "Batch 2026",
+    name: "Rohit Mishra",
+    position: "Member",
+    batch: "MCA'26",
+    linkedin: "https://www.linkedin.com/in/rohit-mishra-ba060215a",
+    imagePath: "./images/members/2026/26_Rohit.jpg",
+  },
+  {
+    tag: "Batch 2026",
     name: "Abhishek Maurya",
     position: "Member",
     batch: "MSC'25",
